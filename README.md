@@ -1,26 +1,44 @@
-Data Science applied to maintenance planning optimization
+# Data Science Applied to Maintenance Planning Optimization
 
-A new data science consulting company was hired to solve and improve the maintenance planning of an outsourced transport company. The company maintains an average number of trucks in its fleet to deliver across the country, but in the last 3 years it has been noticing a large increase in the expenses related to the maintenance of the air system of its vehicles, even though it has been keeping the size of its fleet relatively constant. The maintenance cost of this specific system is shown below in dollars:
+A new data science consulting company was hired to solve and improve the maintenance planning of an outsourced transport company. The company maintains an average number of trucks in its fleet to deliver across the country. However, over the past three years, they have noticed a significant increase in expenses related to the maintenance of the air systems in their vehicles, despite keeping the size of their fleet relatively constant. The maintenance cost of this specific system is shown below in dollars:
 
+## Objective
 
-Your objective as a consultant is to decrease the maintenance costs of this particular system. Maintenance costs for the air system may vary depending on the actual condition of the truck. 
+Your objective as a consultant is to decrease the maintenance costs of this particular system. Maintenance costs for the air system may vary depending on the actual condition of the truck.
 
-If a truck is sent for maintenance, but it does not show any defect in this system, around $10 will be charged for the time spent during the inspection by the specialized team.
-If a truck is sent for maintenance and it is defective in this system, $25 will be charged to perform the preventive repair service.
-If a truck with defects in the air system is not sent directly for maintenance, the company pays $500 to carry out corrective maintenance of the same, considering the labor, replacement of parts and other possible inconveniences (truck broke down in the middle of the track for example).
+- **If a truck is sent for maintenance, but no defect in this system is found:** 
+  - Charge: $10 for the time spent during the inspection by the specialized team.
+- **If a truck is sent for maintenance and it is defective in this system:**
+  - Charge: $25 to perform the preventive repair service.
+- **If a truck with defects in the air system is not sent directly for maintenance:**
+  - Charge: $500 to carry out corrective maintenance, considering labor, replacement of parts, and other possible inconveniences (e.g., truck broke down in the middle of the track).
 
-During the alignment meeting with those responsible for the project and the company's IT team, some information was given to you:
+## Project Information
 
-The technical team informed you that all information regarding the air system of the paths will be made available to you, but for bureaucratic reasons regarding company contracts, all columns had to be encoded. 
-The technical team also informed you that given the company's recent digitization, some information may be missing from the database sent to you.
+During the alignment meeting with those responsible for the project and the company's IT team, the following information was provided:
 
-Finally, the technical team informed you that the source of information comes from the company's maintenance sector, where they created a column in the database called class: "pos" would be those trucks that had defects in the air system and "neg" would be those trucks that had a defect in any system other than the air system. 
+- The technical team will make all information regarding the air system of the trucks available to you. However, for bureaucratic reasons related to company contracts, all columns had to be encoded.
+- Due to the company's recent digitization, some information may be missing from the database provided to you.
 
-Those responsible for the project are very excited about the initiative and, when asking for a technical proof of concept, they have put forth as main requirements:
-Can we reduce our expenses with this type of maintenance using AI techniques?
-Can you present to me the main factors that point to a possible failure in this system?
-These points, according to them, are important to convince the executive board to embrace the cause and apply it to other maintenance systems during the year 2022.
+### Classification Information
 
-About the database 
-air_system_present_year.csv: File containing all information from the maintenance sector in this year.
-Any missing value in the database is denoted by na.
+The source of information comes from the company's maintenance sector. They have created a column in the database called `class`:
+- `pos`: Trucks that had defects in the air system.
+- `neg`: Trucks that had a defect in any system other than the air system.
+
+## Requirements and Expectations
+
+The project stakeholders are very excited about this initiative. They have outlined the following main requirements for a technical proof of concept:
+1. **Can we reduce our expenses with this type of maintenance using AI techniques?**
+2. **Can you present the main factors that indicate a possible failure in this system?**
+
+These points are crucial to convince the executive board to embrace the initiative and apply it to other maintenance systems during the year 2022.
+
+## Database Information
+
+- **File:** `air_system_present_year.csv`
+- **Description:** Contains all information from the maintenance sector for this year. Any missing value in the database is denoted by `na`.
+
+---
+
+Feel free to adjust any sections as needed to better fit the project's requirements.
